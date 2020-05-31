@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbearia Alura</title>
+    <script
+      src="https://kit.fontawesome.com/4c603d4df3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="#">
+          <img src="img/logo-branco.png" alt="Logo Barbearia Alura" />
+        </a>
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#produtos">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h1 class="titulo-principal">Alura</h1>
+    </header>
+    <main>
+      <section id="sobre">
+        <h2>Sobre a Barbearia Alura</h2>
+        <p>
+          Localizada no coração da cidade a Barbearia Alura traz para o mercado
+          o que há de melhor para o seu cabelo e barba. Fundada em 2019, a
+          Barbearia Alura já é destaque na cidade e conquista novos clientes a
+          cada dia.
+        </p>
+        <p class="missao">
+          <em
+            >Nossa missão é:
+            <strong
+              >"Proporcionar auto-estima e qualidade de vida aos
+              clientes"</strong
+            ></em
+          >.
+        </p>
+        <p>
+          Oferecemos profissionais experientes e antenados às mudanças no mundo
+          da moda. O atendimento possui padrão de excelência e agilidade,
+          garantindo qualidade e satisfação dos nossos clientes.
+        </p>
+        <h2>Benefícios</h2>
+        <ul class="lista-beneficios">
+          <li class="item-beneficios">
+            <i class="fas fa-users"></i>
+            <p>Atendimento aos Clientes.</p>
+          </li>
+          <li class="item-beneficios">
+            <i class="fas fa-store"></i>
+            <p>Espaço diferenciado.</p>
+          </li>
+          <li class="item-beneficios">
+            <i class="fas fa-map-marked-alt"></i>
+            <p>Localização.</p>
+          </li>
+          <li class="item-beneficios">
+            <i class="fas fa-cut"></i>
+            <p>Profissionais Qualificados.</p>
+          </li>
+        </ul>
+        <h2>Nosso Estabelecimento</h2>
+        <p>Nosso estabelecimento está localizado no coração da cidade.</p>
+        <div class="mapa-conteudo">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4483278365396!2d-46.63466568562861!3d-23.588249068469487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum!5e0!3m2!1spt-BR!2sbr!4v1568814489656!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="300"
+            frameborder="0"
+            style="border: 0;"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+      <section id="produtos">
+        <h3 class="titulo-sessao">
+          Produtos
+        </h3>
+        <ul class="lista-produtos">
+          <li class="itens">
+            <h3>Cabelo</h3>
+            <img src="img/cabelo.png" alt="Corte Cabelo" />
+            <p class="descricao">
+              Na tesoura ou na máquina, como o cliente preferir.
+            </p>
+            <p class="valor">R$ 25,00</p>
+          </li>
+          <li class="itens">
+            <h3>Barba</h3>
+            <img src="img/barba.png" alt="Barba" />
+            <p class="descricao">Corte e desenho profissional de barba.</p>
+            <p class="valor">R$ 18,00</p>
+          </li>
+          <li class="itens">
+            <h3>Cabelo + Barba</h3>
+            <img src="img/cabelo+barba.png" alt="Cabelo e Barba" />
+            <p class="descricao">Pacote completo de cabelo e barba.</p>
+            <p class="valor">R$ 35,00</p>
+          </li>
+        </ul>
+      </section>
+      <section id="contato">
+        <h3 class="titulo-sessao -contato">
+          Contato
+        </h3>
+        <form>
+          <label for="nomesobrenome">Nome e sobrenome</label>
+          <input type="text" id="nomesobrenome" class="input-padrao" required />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="input-padrao"
+            required
+            placeholder="seuemail@dominio.com"
+          />
+
+          <label for="telefone">Telefone</label>
+          <input
+            type="tel"
+            id="telefone"
+            class="input-padrao"
+            required
+            placeholder="(XX) XXXXX-XXXX"
+          />
+
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            cols="70"
+            rows="10"
+            id="mensagem"
+            class="input-padrao"
+            required
+          ></textarea>
+
+          <fieldset>
+            <legend>Como prefere o nosso contato?</legend>
+            <label for="radio-email"
+              ><input
+                type="radio"
+                name="contato"
+                value="email"
+                id="radio-email"
+              />
+              Email</label
+            >
+
+            <label for="radio-telefone"
+              ><input
+                type="radio"
+                name="contato"
+                value="telefone"
+                id="radio-telefone"
+              />
+              Telefone</label
+            >
+
+            <label for="radio-whatsapp"
+              ><input
+                type="radio"
+                name="contato"
+                value="whatsapp"
+                id="radio-whatsapp"
+                checked
+              />
+              WhatsApp</label
+            >
+          </fieldset>
+
+          <fieldset>
+            <legend>Qual horário prefere ser atendido?</legend>
+            <select>
+              <option>Manhã</option>
+              <option>Tarde</option>
+              <option>Noite</option>
+            </select>
+          </fieldset>
+
+          <label class="checkbox"
+            ><input type="checkbox" checked />Gostaria de receber nossas
+            novidades por email?</label
+          >
+
+          <input type="submit" value="Enviar" class="enviar" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <a class="logo" href="#">
+        <img src="img/logo-branco.png" alt="Logo Barbearia Alura" />
+      </a>
+      <div class="sociais">
+        <a href="#">
+          <i class="fab fa-instagram icone"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-facebook icone"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter icone"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
